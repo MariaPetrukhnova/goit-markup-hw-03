@@ -20,15 +20,15 @@ body {
     text-decoration: none;
 }
 
-.logo {
-    font-family: Raleway, sans-serif;
-    font-weight: 700;
-    text-decoration: none;
+.logo span{
     color: #000000;
 }
 
-.logo span{
-color: var(--accent-color);
+.logo {
+    color: var(--accent-color);
+    text-decoration: none;
+    font-family: Raleway, sans-serif;
+    font-weight: 700;
 }
 
 .site-nav .link{
@@ -68,7 +68,7 @@ color: var(--accent-color);
     background-color: var(--accent-color);
     color: var(--white-color);
     font-weight: 700;
-    line-height: 1,88;
+    line-height: 1.88;
     text-align: center;
     letter-spacing: 0.06em;
     cursor: pointer;
@@ -116,16 +116,23 @@ color: var(--accent-color);
     letter-spacing: 0.03em;
 }
 
-.adr {
-    color: var(--white-color);
+.page-footer {
     background-color: #2F303A;
+}
+.page-footer span {
+    color: var(--white-color);
+}
+.adr {
     font-style: normal;
     font-size: 14px;
-    line-height: 1,71;    
+    line-height: 1.71;
     letter-spacing: 0.03em;
 }
-
-.footer-link {
+.adr-link {
+    color: var(--white-color);
+    text-decoration: none;
+}
+.contact-link {
     color: rgba(255, 255, 255, 0.6);
     text-decoration: none;
 }
@@ -157,6 +164,6 @@ color: var(--accent-color);
 
 .portfolio-text {
     color: var(--main-color);
-    line-height: 1,88;
+    line-height: 1.88;
     letter-spacing: 0.03em;
 }

@@ -28,11 +28,20 @@ h1, h2, h3, h4, h5, h6, p, ul {
 }
 
 .container {
-    width: 1200px;
+    width: 1170px;
     display: flex;
+    margin: 0 auto;
+}
+
+.section {
+    padding: 94px 0;
+}
+
+.page-header .container {
     min-height: 80px;
     align-items: center;
     justify-content: center;
+    margin: 0 auto;
 }
 .logo span {
     color: #000000;
@@ -51,17 +60,17 @@ h1, h2, h3, h4, h5, h6, p, ul {
 
 .site-nav {
     display: flex;
-    }
+}
 
-.site-nav .item{
+.site-nav .item {
     color: var(--title-color);
     font-weight: 500;
     font-size: 14px;
     line-height: 1.14;
     letter-spacing: 0.02em;
 }
+
 .item .link {
-    display: block;
     padding: 32px 0;
 }
 .item:not(:last-child) {
@@ -71,6 +80,7 @@ h1, h2, h3, h4, h5, h6, p, ul {
 .link:hover, .link:focus, .link.active {
     color: var(--accent-color);
 }
+
 .list.contacts {
     display: flex;
     margin-left: 344px;
@@ -83,6 +93,13 @@ h1, h2, h3, h4, h5, h6, p, ul {
 
 .hero {
     background: #2F303A;
+    padding: 200px 20px;
+}
+
+.hero-content {
+    text-align: center;
+    margin: 0 auto;
+    max-width: 696px;
 }
 
 .hero-title {
@@ -90,7 +107,6 @@ h1, h2, h3, h4, h5, h6, p, ul {
     font-weight: 900;
     font-size: 44px;
     line-height: 1.36;
-    text-align: center;
     letter-spacing: 0.06em;
     text-transform: uppercase;
 }
@@ -103,10 +119,20 @@ h1, h2, h3, h4, h5, h6, p, ul {
     text-align: center;
     letter-spacing: 0.06em;
     cursor: pointer;
+    width: 216px;
+    height: 50px;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+    border-radius: 4px;
+    margin-top: 30px;
 }
 
 .hidden-title{
     visibility: hidden;
+    margin-bottom: -28px;
+}
+
+.section .item:not(:last-child) {
+    margin-right: 30px;
 }
 
 .features-title {
@@ -117,10 +143,10 @@ h1, h2, h3, h4, h5, h6, p, ul {
     letter-spacing: 0.03em;
     text-transform: uppercase;
 }
+
 .features-text {
     font-size: 14px;
     line-height: 1.71; 
-    letter-spacing: 0.03em;
 }
 
 .section-title {
@@ -130,6 +156,11 @@ h1, h2, h3, h4, h5, h6, p, ul {
     line-height: 42px;
     text-align: center;
     letter-spacing: 0.03em;
+    margin-bottom: 50px;
+}
+
+.team.section {
+    background-color: var(--secondary-bcg);
 }
 
 .team-title {
@@ -139,33 +170,70 @@ h1, h2, h3, h4, h5, h6, p, ul {
     line-height: 1.19;
     /*text-align: center;*/
     letter-spacing: 0.03em;
+    text-align: center;
+    margin-top: 30px;
+    margin-bottom: 10px;
 }
 
-.text-title {
+.team-text {
     line-height: 1.19;
     text-align: center;
     letter-spacing: 0.03em;
 }
 
+.team .item {
+    width: 270px;
+    min-height: 368px;
+    background-color: #ffffff;
+}
+
 .page-footer {
     background-color: #2F303A;
+    min-height: 252px;
+    padding: 60px 0;
 }
+
+.page-footer .container {
+    display: inherit;
+}
+
+.page-footer .logo {
+    margin-bottom: 20px;
+    display: inherit;
+}
+
 .page-footer span {
     color: var(--white-color);
 }
+
 .adr {
     font-style: normal;
     font-size: 14px;
     line-height: 1.71;
     letter-spacing: 0.03em;
 }
+
+.adr .item:not(:last-child) {
+    margin-bottom: 9px;
+}
+
 .adr-link {
     color: var(--white-color);
     text-decoration: none;
 }
+
 .contact-link {
     color: rgba(255, 255, 255, 0.6);
     text-decoration: none;
+}
+
+.portfolio .btn-list {  
+    justify-content: center;
+    margin-bottom: 50px;
+}
+
+.btn-list .item:not(:last-child) {
+    margin-right: 8px;
 }
 
 .filter-btn {
@@ -177,12 +245,30 @@ h1, h2, h3, h4, h5, h6, p, ul {
     text-align: center;
     letter-spacing: 0.03em;
     border: none;
+
+    padding: 6px 22px;
 }
 
 .filter-btn:hover, .filter-btn:focus {
     color: var(--white-color);
     background-color: var(--accent-color);
     cursor: pointer;
+}
+
+.cards-list {
+    flex-wrap: wrap;
+}
+
+.cards-list .item {
+    margin-right: 30px;
+    margin-bottom: 30px;
+    width: 370px;
+    min-height: 404px;
+    border: 1px solid #EEEEEE;
+}
+
+.cards-list .item:nth-child(3n) {
+    margin-right: 0;
 }
 
 .portfolio-title {

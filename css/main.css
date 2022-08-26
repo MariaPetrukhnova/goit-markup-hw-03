@@ -12,15 +12,29 @@ body {
     background-color: #ffffff;
 }
 
-.list {
+h1, h2, h3, h4, h5, h6, p, ul {
     list-style: none;
+    padding: 0;
+    margin: 0;
 }
 
 .link {
     text-decoration: none;
+    color: inherit;
 }
 
-.logo span{
+.page-header {
+    border-bottom: 1px solid #ECECEC;
+}
+
+.container {
+    width: 1200px;
+    display: flex;
+    min-height: 80px;
+    align-items: center;
+    justify-content: center;
+}
+.logo span {
     color: #000000;
 }
 
@@ -28,22 +42,39 @@ body {
     color: var(--accent-color);
     text-decoration: none;
     font-family: Raleway, sans-serif;
+    font-size: 26px;
     font-weight: 700;
+    line-height: 1.19;
+    letter-spacing: 0.03em;
+    margin-right: 92px;
 }
 
-.site-nav .link{
+.site-nav {
+    display: flex;
+    }
+
+.site-nav .item{
     color: var(--title-color);
     font-weight: 500;
     font-size: 14px;
     line-height: 1.14;
     letter-spacing: 0.02em;
 }
+.item .link {
+    display: block;
+    padding: 32px 0;
+}
+.item:not(:last-child) {
+    margin-right: 50px;
+}
+
 .link:hover, .link:focus, .link.active {
     color: var(--accent-color);
 }
-
-.contacts {
-    color: var(--title-color);
+.list.contacts {
+    display: flex;
+    margin-left: 344px;
+    color: var(--main-color);
     font-weight: 500;
     font-size: 14px;
     line-height: 1.14;

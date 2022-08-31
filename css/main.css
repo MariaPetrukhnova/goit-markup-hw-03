@@ -119,13 +119,11 @@ h1, h2, h3, h4, h5, h6, p, ul {
     color: var(--white-color);
     font-weight: 700;
     line-height: 1.88;
-    text-align: center;
     letter-spacing: 0.06em;
     cursor: pointer;
-    width: 216px;
-    height: 50px;
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
     border-radius: 4px;
+    padding: 10px 32px;
     margin-top: 30px;
 }
 
@@ -150,8 +148,7 @@ h1, h2, h3, h4, h5, h6, p, ul {
 
 .features-item:not(:last-child),
 .worktypes-item:not(:last-child),
-.team-item:not(:last-child),
-.filter-item:not(:last-child) {
+.team-item:not(:last-child) {
     margin-right: 30px;
 }
 
@@ -245,7 +242,7 @@ h1, h2, h3, h4, h5, h6, p, ul {
     margin-bottom: 50px;
 }
 
-.filter .item:not(:last-child) {
+.filter-item:not(:last-child) {
     margin-right: 8px;
 }
 
@@ -254,9 +251,7 @@ h1, h2, h3, h4, h5, h6, p, ul {
     background-color: var(--secondary-bcg);
     border-radius: 4px;
     font-weight: 500;
-    font-size: 16px;
     line-height: 1.62;
-    text-align: center;
     letter-spacing: 0.03em;
     border: none;
     padding: 6px 22px;

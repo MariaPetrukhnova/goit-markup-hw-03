@@ -27,6 +27,7 @@ h1, h2, h3, h4, h5, h6, p, ul {
 .container {
     width: 1170px;
     display: flex;
+    justify-content: center;
     margin: 0 auto;
 }
 
@@ -58,9 +59,12 @@ h1, h2, h3, h4, h5, h6, p, ul {
     letter-spacing: 0.03em;
 }
 
+.site-nav {
+    margin-left: 92px;
+}
+
 .navigation {
     display: flex;
-    margin-left: 92px;
 }
 
 .nav-item {
@@ -72,15 +76,15 @@ h1, h2, h3, h4, h5, h6, p, ul {
 }
 
 .nav-item .link, 
-.cont-item .link{
+.contactas-item .link{
     padding: 32px 0;
 }
 .nav-item:not(:last-child),
-.cont-item:not(:last-child) {
+.contacts-item:not(:last-child) {
     margin-right: 50px;
 }
 .nav-item .link:hover, .link:focus, .link.active, 
-.cont-item .link:hover, .link:focus, .link.active{
+.contacts-item .link:hover, .link:focus, .link.active{
     color: var(--accent-color);
 }
 
@@ -237,11 +241,6 @@ h1, h2, h3, h4, h5, h6, p, ul {
     text-decoration: none;
 }
 
-.portfolio .filter {  
-    justify-content: center;
-    margin-bottom: 50px;
-}
-
 .filter-item:not(:last-child) {
     margin-right: 8px;
 }
@@ -266,6 +265,7 @@ h1, h2, h3, h4, h5, h6, p, ul {
 }
 
 .cards {
+    margin-top: 50px;
     flex-wrap: wrap;
 }
 

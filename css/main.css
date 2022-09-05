@@ -293,6 +293,10 @@ h1, h2, h3, h4, h5, h6, p, ul {
     margin-right: 0;
 }
 
+.img-wrapper {
+    font-size: 0;
+}
+
 .cards-content {
     padding: 20px 24px;
     border: 1px solid var(--cards-line);
